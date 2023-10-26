@@ -102,7 +102,7 @@
                   </div>
                   <div class="form-group">
                     <label for="file1">Upload certificate</label>
-                  <input type="file" name="image" accept="image/png, image/jpeg" class="form-control" id="eimage" />
+                    <input type="file" name="image" accept="image/png, image/jpeg" class="form-control" id="eimage" />
                   </div>
                 </div>
                 <div class="modal-footer border-top-0 d-flex justify-content-center">

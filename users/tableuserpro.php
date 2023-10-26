@@ -53,7 +53,7 @@ include '../api/dbcon.php';
             <div class="card-header pb-0">
               <div class="d-flex justify-content-between">
                 <h6> Progression Table </h6>
-                <a class="btn bg-gradient-dark mb-0" href="userpro.php"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add</a>
+                <a class="btn bg-gradient-primary mb-0" href="userpro.php"><i class="fas fa-plus"></i>&nbsp;&nbsp;Add</a>
               </div>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
@@ -70,7 +70,7 @@ include '../api/dbcon.php';
                   </thead>
                   <tbody>
                     <?php
-                    $user =$_SESSION["did"];
+                    $user = $_SESSION["did"];
                     $sql = "SELECT * FROM progression where did='$user'";
                     $result = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($result)) {
