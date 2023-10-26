@@ -70,9 +70,10 @@ include '../api/dbcon.php';
                   </thead>
                   <tbody>
                   <?php
-                    $sql="SELECT login.did,DName,Email,login.UserName FROM login INNER JOIN department ON login.did=department.did";
+                    $sql="SELECT login.did,DName,Email,login.UserName FROM login INNER JOIN department ON login.did=department.did WHERE login.did NOT LIKE 1 ";
                     $result = mysqli_query($conn,$sql);
                     while ($row = mysqli_fetch_array($result)) {
+
                       ?>
                     <tr>
                       <td>
