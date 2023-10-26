@@ -58,7 +58,7 @@
         </nav>
         <a class="btn bg-gradient-danger mb-0" href="../api/logout.php">&nbsp;&nbsp;logout</a>
     </nav>
-</div>
+    </div>
     <!-- End Navbar -->
     <div class="container p-4">
       <form action="../api/addplacement.php" method="POST" enctype="multipart/form-data" onsubmit="return formValidate()">
@@ -214,12 +214,12 @@
         document.getElementById("errormsg").innerHTML = '<div class="alert alert-danger text -white" role="alert">Fill The Name!</div>'
         return false;
       }
-      if (phid.value == "" || phid.value.length!=10) {
+      if (phid.value == "" || phid.value.length != 10) {
         phid.focus();
         document.getElementById("errormsg").innerHTML = '<div class="alert alert-danger text-white" role="alert">Fill The Correct Phone Number(max of 10)!</div>'
         return false;
       }
-      if (year.value == "" || year.value.length!=4) {
+      if (year.value == "" || year.value.length != 4) {
         year.focus();
         document.getElementById("errormsg").innerHTML = '<div class="alert alert-danger text-white" role="alert">Fill The Year!</div>'
         return false;

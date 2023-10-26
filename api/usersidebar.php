@@ -1,7 +1,6 @@
    <?php
     session_start();
-    if ( !isset( $_SESSION['did']))
-    {
+    if (!isset($_SESSION['did'])) {
         header('location:../../index.php');
     }
     function sideBar($active)
@@ -64,7 +63,7 @@
                                <span class="nav-link-text ms-1">PlacementTable</span>
                            </a>
                        </li>
-                       
+
                    </ul>
                </div>
            </aside>

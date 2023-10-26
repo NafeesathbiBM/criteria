@@ -37,7 +37,7 @@
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
-<?php include '../api/usersidebar.php';
+  <?php include '../api/usersidebar.php';
   sideBar('ProgressionTable');
   ?>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg">
@@ -183,7 +183,9 @@
         document.getElementById("errormsg").innerHTML = ""
       }
     }
-    fileInput.onchange = function() {imgValidate()};
+    fileInput.onchange = function() {
+      imgValidate()
+    };
 
     function formValidate() {
       const sname = document.getElementById("ename");
